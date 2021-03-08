@@ -40,7 +40,7 @@ header h2:hover{
   font-size: x-large;
   list-style-type: none;
   text-shadow: 2px 2px rgb(245, 243, 243);
-  transition: 0.2s;
+  transition: 0.3s;
 }
 header nav{
   display: flex;
@@ -296,6 +296,7 @@ ul.about-content{
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .flexbox > li {
   width: 40%;
   height: 100%;
@@ -307,6 +308,7 @@ ul.about-content{
 }
 .flexbox > li :hover {
   border: 6px solid white;
+
 }
 
 
@@ -314,7 +316,6 @@ ul.about-content{
   content: '🏃  ';
   color: #fff;
   text-shadow: 2px 2px white;
-
 }
 
 #robotGladiators:hover::before {
