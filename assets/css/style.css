@@ -17,7 +17,7 @@ a{
 }
 
 header{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
@@ -34,6 +34,14 @@ header{
 header h2{
   text-transform: uppercase;
 }
+header h2:hover{
+  color: rgb(45, 45, 58);
+  font-weight: 900;
+  font-size: x-large;
+  list-style-type: none;
+  text-shadow: 2px 2px rgb(245, 243, 243);
+  transition: 0.2s;
+}
 header nav{
   display: flex;
 }
@@ -41,6 +49,15 @@ header nav li{
   margin: 0px 30px;
   font-weight: bolder;
 }
+header nav li:hover {
+  color: rgb(20, 23, 216);
+  font-weight: 900;
+  font-size: x-large;
+  list-style-type: none;
+  text-shadow: 2px 2px rgb(245, 243, 243);
+  transition: 0.2s;
+}
+
 header nav li:first-child{
   margin-left: 0;
 }
@@ -137,6 +154,11 @@ header nav li:last-child{
       opacity: 0.6;
     }
 
+
+    .hero .hero-btn:hover{
+      color: black;
+      background-color: beige;
+    }
     @media (max-width:600px){
     .hero{
         min-height: 500px;
@@ -201,11 +223,17 @@ ul.about-content{
 }
 .about-btn{
   padding: 10px 30px;
-  background: crimson;
+  background:rgb(230, 80, 80);
   color: #fff ;
   text-transform: uppercase;
   border-radius: 50px;
 }
+.about-btn:hover{
+  background-color: crimson;
+  list-style-type: none;
+  transition: 0.13s;
+}
+
 @media(max-width:1000px){
   .about.left,
   .about-right{
@@ -277,6 +305,36 @@ ul.about-content{
   font-size: 30px;
   color: white
 }
+.flexbox > li :hover {
+  border: 6px solid white;
+}
+
+
+#runBuddy:hover::before {
+  content: '🏃  ';
+  color: #fff;
+  text-shadow: 2px 2px white;
+
+}
+
+#robotGladiators:hover::before {
+  content: '🤖  ';
+  color: #fff;
+  text-shadow: 2px 2px white;
+}
+#codeRefactor:hover::before {
+  content: '💻  ';
+  color: #fff;
+  text-shadow: 2px 2px white;
+}
+#portfolio:hover::before {
+  content: '📜  ';
+  color: #fff;
+  text-shadow: 2px 2px white;
+}
+
+
+
 #runBuddy {
 background-image: url(../images/hero-bg.jpg);
 background-position: bottom;
@@ -355,7 +413,7 @@ opacity: 1.8;
 <!---         Starting contact section           ---> */
 .contact-area{
   align-items: center;
-  
+  color: #fff;
 }
 
 #contact{
@@ -368,8 +426,8 @@ opacity: 1.8;
   width: 100%;
   justify-content: center;
   flex-wrap: wrap;
-  font-size: 30px;
-  padding: 30px;
+  font-size: 35px;
+  padding: 10px;
 }
 
 
@@ -381,8 +439,17 @@ opacity: 1.8;
   text-transform: uppercase;
   border-radius: 50px;
 }
-.contact-content li i{
-  font-size: 50px;
-  color: crimson;
-  margin-bottom: 25px;
+.contact-content li :hover{
+  color:blue;
+  font-weight: 600;
+  font-size: 40px;
+  list-style-type: none;
+  text-shadow: 3px 3px rgb(245, 243, 243);
+  transition: 0.2s;
+}
+/*<!---       finished contact                 --->
+<!---         Add footer                       ---> */
+.footer{
+  background-color: gainsboro;
+  font-size: smaller;
 }
