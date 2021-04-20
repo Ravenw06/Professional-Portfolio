@@ -331,6 +331,11 @@ ul.about-content{
   color: #fff;
   text-shadow: 2px 2px white;
 }
+#habitTracker:hover::before {
+  content: '✔️  ';
+  color: #fff;
+  text-shadow: 2px 2px white;
+}
 
 
 
@@ -373,6 +378,17 @@ opacity: 1.8;
   background-color: rgb(250, 246, 246);
   opacity: 0.8;
 }
+#habitTracker {
+  background-image: url(https://i.pcmag.com/imagery/roundups/054YhGcdSr0FkY8pIDnot1L-1..1569492510.jpg);
+  background-position: top;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  background-color: rgb(250, 246, 246);
+  opacity: 0.8;
+  color: #000;
+}
+
 @media(max-width:1000px){
   .work.left,
   .work-right{
