@@ -221,7 +221,7 @@ ul.about-content{
 
 }
 .about-btn{
-  padding: 10px 30px;
+  padding: 10px 40px;
   background:rgb(230, 80, 80);
   color: #fff ;
   text-transform: uppercase;
@@ -267,8 +267,7 @@ ul.about-content{
   background-size: cover;
   z-index: -1;
   color:whitesmoke;
-  font-style: oblique;
-
+  font-style: oblique; 
 }
 #work::after{
   content: " ";
@@ -336,8 +335,22 @@ ul.about-content{
   color: #fff;
   text-shadow: 2px 2px white;
 }
+#CMS:hover::before {
+  content: '🍔 ';
+  color: #fff;
+  text-shadow: 2px 2px white;
+}
 
-
+#CMS {
+  background-image: url(../images/AdobeStock_127928024.jpeg);
+  background-position: center;
+  background-size: cover;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.8;
+  }
 
 #runBuddy {
 background-image: url(../images/herobg.jpg);
